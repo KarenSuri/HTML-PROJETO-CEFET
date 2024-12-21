@@ -24,7 +24,7 @@ main {
   margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-.titulo, .menu {
+.title, .menu {
   text-align: center;
   color: #84c754;
   margin: 0;
