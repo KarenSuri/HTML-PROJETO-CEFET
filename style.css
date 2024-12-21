@@ -1,0 +1,63 @@
+body {
+  width: 100%; 
+  height: 100vh; 
+  margin: 0; /* Remover margin: auto; para ocupar toda a largura */
+  font-family: Arial, sans-serif;
+  background-image: url(imagens/circuit.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 110% 110%;
+  background-color: black;
+}
+
+main {
+  width: 90%; 
+  height: 90%; 
+  padding: 5px 40px; 
+  background: #000000e3;
+  border-radius: 10px; 
+  margin: 5% auto; /* Centralizar horizontalmente */ 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.titulo, .menu {
+  text-align: center;
+  color: #84c754;
+  margin: 0;
+}
+
+.menu ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  color:#53c006;
+  padding: 16px;
+}
+
+footer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.creditos {
+  display: flex;
+  height: 30vh; /* Ajuste conforme necessário */
+  justify-content: baseline; 
+  align-items: end;
+}
