@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="title2">
-        
+        <h1>Modelo OSI aplicado ao TCP/IP</h1>
+        <p>O que é o modelo OSI?
+            Pense que você trabalha no departamento de marketing de uma grande transnacional do ramo de tecnologia. Você mora no Brasil, e sua língua materna é o português. No entanto, no seu dia a dia, você precisa se comunicar com desenvolvedores ingleses, analistas de mercado argentinos, um gerente de conteúdo norte-americano e, além de tudo, a diretora de marketing é coreana, mas vive na Califórnia.
+            
+            Sem que eu precise sugerir, você já imaginou que toda essa comunicação acontece em uma única língua (provavelmente o inglês).
+            
+            O modelo OSI (Open Systems Interconection — Interconexão de Sistemas Abertos) nada mais é do que um modelo teórico criado para auxiliar que toda a comunicação entre computadores e dispositivos ocorra “na mesma língua”, a fim de que todos os envolvidos possam se entender e que as mensagens sejam entregues da forma correta.
+            
+            Assim, o modelo OSI divide um sistema de comunicação em 7 camadas, cada uma com sua função e seus protocolos de comunicação específicos:
+            
+            representação das camadas do modelo OSI
+            
+            Abaixo, você entende um pouco melhor o que acontece em cada camada, da mais “próxima” do usuário final (a camada de aplicação) à mais distante (a camada física).
+            
+            Camada 7: camada de aplicação
+            Como apontado na ilustração, é nessa camada que ocorre a interação entre o usuário e os dados, apresentados por meio de interfaces e aplicações como navegadores de internet e servidores de email. Alguns dos protocolos de comunicação mais populares utilizados na camada de aplicação são HTTP, FTP, POP e DNS.
+            
+            Camada 6: camada de apresentação
+            A camada de apresentação funciona como um tradutor de dados para a rede, responsáel por criptografar, compactar e apresentar os dados.
+            
+            Camada 5: camada de sessão
+            A camada de sessão é onde se inicia, gerencia e encerra sessões de transferência de dados entre dispositivos. Ela também pode realizar verificações para garantir, caso uma sessão seja encerrada bruscamente, que uma nova sessão de transferência seja retomada do início para que não haja corrupção dos dados e informações.
+            
+            Camada 4: camada de transporte
+            A camada de transporte controla o fluxo de transferência de acordo com a largura de banda e outras especificações, principalmente por meio de protocolos como TCP e UDP. Ao utilizar o protocolo TCP, por exemplo, essa camada é capaz de quebrar os dados em segmentos para simplificar sua transferência e remontá-los na outra ponta da comunicação..
+            
+            Camada 3: camada de rede
+            Além de transformar os segmentos oferecidos pela camada 4 em “pacotes de rede” (network packets), a camada de rede faz o roteamento desses pacotes, analisando e selecionando os melhores caminhos para realizar a transferência.
+            
+            Camada 2: camada de enlace
+            A camada de enlace é composta por duas partes: LLC (Logical Link Control — controle de enlace lógico) e **MAC (**Media Access Control—controle de acesso a mídias). A primeira identifica os protocolos físicos utilizados pela rede em que a conexão foi estabelecida, enquanto a segunda utiliza endereços MAC para estabelecer conexões entre dispositivos e permissões para a transferência e recebimento de dados.
+            
+            Camada 1: camada física
+            É aqui que a transferência física dos dados brutos ocorre. Os bits são transferidos usando pulsos elétricos, luz ou ondas de rádio, por meio de cabos ou tecnologia wireless.
+            
+            O que é o modelo TCP/IP?
+            Apesar de ser um modelo detalhado e organizado de comunicação entre dispositivos em uma rede, o modelo OSI é um modelo teórico, como já foi mencionado. Ele foi projetado para permitir a comunicação em qualquer tipo de rede, por isso funciona como um modelo de referência.
+            
+            Por outro lado, o modelo TCP/IP é uma implementação específica do modelo OSI voltada para a internet. Ele foi criado por conta da necessidade de padronização de outras tecnologias do stack de rede. Assim, esse modelo se concentra mais no estabelecimento de protocolos padrão específicos.
+            
+            representação das camadas do modelo TCP/IP
+            
+            Camada 4: camada de aplicação
+            Pode-se dizer que a camada de aplicação do modelo TCP/IP condensa as camadas 5, 6 e 7 do modelo OSI. Isso significa que todos os protocolos para estabelecimento e manutenção de sessões, de montagem e apresentação de dados e de interação usuário-máquina estão contidos nessa camada (tais como HTTP, SMTP, Telnet, FTP, DNS etc.). Diferentemente do modelo OSI, a camada de aplicação TCP/IP também se ocupa da forma como as aplicações interpretam os dados recebidos.
+            
+            Camada 3: camada de transporte
+            Correspondente à camada 4 do modelo OSI (também chamada de “camada de transporte”), é responsável pela comunicação de ponta a ponta na rede usando os protocolos TCP e UDP.
+            
+            Camada 2: camada de internet
+            Correlata à camada 3 do OSI (camada de rede), é responsável por produzir os network packets e roteá-los pelo melhor caminho possível. O principal protocolo utilizado nessa camada é o IP, que identifica origem e destino dos dados transferidos.
+            
+            Camada 1: camada de acesso de rede
+            Aqui temos uma mescla das camadas 1 (física) e 2 (enlace) do modelo OSI, e nesse caso, estamos nos referindo a toda a estrutura física e lógica que permite a comunicação entre computadores e outros dispositivos:. Baseia-se em padrões como Ethernet, Token Ring, Frame Relay e ATM.
+            
+            Modelos OSI e TCP/IP e protocolos de comunicação
+            Como demonstramos neste artigo, os modelos OSI e TCP/IP foram criados a fim de organizar e padronizar os diferentes processos utilizados na comunicação de computadores em rede e, para isso, utilizar protocolos abertos e largamente difundidos é fundamental.</p>
     </div>
 </body>
 </html>

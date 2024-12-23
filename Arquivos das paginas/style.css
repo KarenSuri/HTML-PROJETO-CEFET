@@ -1,4 +1,5 @@
-body {
+.index {
+
   width: 100%; 
   height: 100vh; 
   margin: 0; /* Remover margin: auto; para ocupar toda a largura */
@@ -8,34 +9,34 @@ body {
   background-position: center center;
   background-size: 110% 110%;
   background-color: black;
-}
+  }
 
-main {
+  main {
   width: 90%; 
   height: 90%; 
   padding: 5px 40px; 
   background: #000000e3;
   border-radius: 10px; 
   margin: 5% auto; /* Centralizar horizontalmente */ 
-}
+  }
 
-.container {
+  .container {
   max-width: 800px;
   margin: 0 auto; /* Centraliza o conteúdo */
-}
+  }
 
-.title, .menu {
+  .title, .menu {
   text-align: center;
   color: #84c754;
   margin: 0;
-}
+  }
 
-.menu ul {
+  .menu ul {
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-around;
-}
+  }
 
 .menu li {
   list-style: none;
@@ -60,4 +61,5 @@ footer {
   height: 30vh; /* Ajuste conforme necessário */
   justify-content: baseline; 
   align-items: end;
+}
 }
